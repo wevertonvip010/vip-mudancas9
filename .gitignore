@@ -1,1 +1,37 @@
+# Node modules
 node_modules
+dist
+build
+
+# Logs
+*.log
+
+# Env files
+.env
+.env.*
+
+# IDE
+.vscode
+.idea
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv
+.envrc
+
+# MacOS
+.DS_Store
+
+# System
+*.swp
+*.swo
+
+# Vercel / Netlify
+.vercel
+.netlify
+
+# Others
+coverage
