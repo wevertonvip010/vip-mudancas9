@@ -3,10 +3,7 @@
   "builds": [
     {
       "src": "frontend/package.json",
-      "use": "@vercel/static-build",
-      "config": {
-        "distDir": "dist"
-      }
+      "use": "@vercel/static-build"
     },
     {
       "src": "backend/src/main.py",
@@ -20,16 +17,10 @@
     },
     {
       "src": "/(.*)",
-      "dest": "frontend/dist/$1"
+      "dest": "frontend/dist/index.html"
     }
   ],
   "env": {
     "PYTHONPATH": "backend/src"
-  },
-  "functions": {
-    "backend/src/main.py": {
-      "runtime": "python3.11"
-    }
   }
 }
-
